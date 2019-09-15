@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/53cc303bcd.js"></script>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="content nav__content">
+        <nav class="nav__container">
+          <ul class="nav__menus">
+            <li>
+              <a><i class="icon fab fa-twitter nav__logo"></i>Home</a>
+            </li>
+            <li>
+              <a><i class="icon far fa-bell"></i>Notifications</a>
+            </li>
+            <li>
+              <a><i class="icon far fa-envelope"></i>Messages</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="nav__personal">
+          <input
+            class="nav__search"
+            type="text"
+            name=""
+            id=""
+            placeholder="Search on Twitter"
+          />
+          <div class="nav__avatar">
+            <img alt="My avatar" src="images/avatar.jpg" />
+          </div>
+          <button class="nav__button--tweet">
+            <i class="icon fa fa-feather-alt"> </i>Tweet
+          </button>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <div class="banner__cover">
+        <div class="content banner__content">
+          <div class="banner__avatar">
+            <a>
+              <img src="images/avatar.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="banner__bar">
+        <div class="content banner__bar-content">
+          <ul class="banner__user-info">
+            <li class="banner__user-info--active">
+              <span class="banner__title">Tweets</span>
+              <strong class="banner__amount">2400</strong>
+            </li>
+            <li>
+              <span class="banner__title">Photos</span>
+              <strong class="banner__amount">50</strong>
+            </li>
+            <li>
+              <span class="banner__title">Following</span>
+              <strong class="banner__amount">580</strong>
+            </li>
+            <li>
+              <span class="banner__title">Followers</span>
+              <strong class="banner__amount">800</strong>
+            </li>
+            <li>
+              <span class="banner__title">Favorites</span>
+              <strong class="banner__amount">40</strong>
+            </li>
+          </ul>
+          <div class="banner__actions">
+            <button class="banner__follow">Follow</button>
+            <i class="fa fa-ellipsis-v banner__more-actions"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="profile content">
+      <aside class="profile__about">
+        <div class="about__user">
+          <div class="about__username">
+            <h1>Henrique Torres</h1>
+          </div>
+          <div class="about__tag">
+            <h2>@Henriquetf</h2>
+          </div>
+          <div class="about__me-description">
+            Cat demands wet food right meow!
+          </div>
+          <div class="about__info">
+            <div class="info__location">
+              <i class="icon fa fa-map-marker-alt"></i>
+              <a>São Paulo, Brazil</a>
+            </div>
+            <div class="info__website">
+              <i class="icon fa fa-link"></i>
+              <a>https://ketche.net/</a>
+            </div>
+            <div class="info__join-date">
+              <i class="icon fa fa-calendar-alt"></i>
+              <span>Joined January 2010</span>
+            </div>
+          </div>
+        </div>
+        <div class="about__images">
+          <div class="about__info images__info">
+            <i class="icon fa fa-image"></i>
+            <a>548 Photos and videos</a>
+          </div>
+          <div class="about__images-container">
+            <div class="images__image-box"></div>
+            <div class="images__image-box"></div>
+            <div class="images__image-box"></div>
+            <div class="images__image-box"></div>
+            <div class="images__image-box"></div>
+            <div class="images__image-box"></div>
+          </div>
+        </div>
+      </aside>
+      <section class="profile__timeline"></section>
+      <aside class="profile__modules"></aside>
+    </section>
+  </body>
+</html>
