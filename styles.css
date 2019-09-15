@@ -35,12 +35,13 @@ a {
 
 .content {
   max-width: 1190px;
+  min-width: 950px;
   margin: 0 auto;
 }
 
 .nav {
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   width: 100%;
   display: flex;
   height: 46px;
@@ -160,10 +161,6 @@ a {
   border-radius: 21px;
   padding: 8px 32px;
   max-width: 220px;
-}
-
-.banner {
-  min-width: 900px;
 }
 
 .banner__cover {
@@ -287,12 +284,15 @@ li.banner__user-info--active .banner__amount {
 .profile {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
+
 .profile__about {
   margin-top: 35px;
   display: flex;
   flex-direction: column;
   width: 300px;
+  flex-shrink: 0;
 }
 
 .about__user {
@@ -413,6 +413,7 @@ li.banner__user-info--active .banner__amount {
   display: flex;
   flex-direction: column;
   width: 300px;
+  flex-shrink: 0;
 }
 
 .modules-card {
@@ -420,7 +421,7 @@ li.banner__user-info--active .banner__amount {
   flex-direction: column;
   background-color: #fff;
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px 0 10px 5px;
 }
 
 .modules-card__header {
@@ -502,8 +503,9 @@ li.banner__user-info--active .banner__amount {
 
 .verified-icon {
   color: #1da1f2;
-  margin-left: 4px;
+  padding-left: 2px;
   font-size: 1.4rem;
+  text-decoration: none !important;
 }
 
 .verified-icon::after {
@@ -512,7 +514,7 @@ li.banner__user-info--active .banner__amount {
   position: relative;
   left: -10px;
   top: -2px;
-  font-size: 0.65rem;
+  font-size: 0.7rem;
 }
 
 .similar-profile + .similar-profile {
@@ -558,6 +560,7 @@ li.banner__user-info--active .banner__amount {
   font-size: 1.2rem;
   line-height: 1.6rem;
   margin-bottom: 20px;
+  padding: 0 10px;
 }
 
 .modules-copyright li {
@@ -570,4 +573,163 @@ li.banner__user-info--active .banner__amount {
 
 .modules-copyright li a:hover {
   color: #55acee;
+}
+
+.profile__timeline {
+  width: 590px;
+  flex-shrink: 0;
+  padding: 0 5px;
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.timeline__card {
+  background-color: #fff;
+  flex: 1;
+}
+
+.timeline__tabs {
+  font-size: 1.8rem;
+  display: flex;
+  font-weight: bold;
+  border-bottom: 1px solid #e6ecf0;
+  height: 50px;
+}
+
+.timeline__tabs li {
+  padding: 15px 15px 12px;
+}
+
+.timeline__tabs a:hover {
+  text-decoration: underline;
+}
+
+.timeline__tab--active a {
+  color: #14171a;
+  text-decoration: none !important;
+  cursor: default;
+}
+
+.timeline__feed {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweet-container {
+  display: flex;
+  border-left: 1px solid #e6ecf0;
+  border-right: 1px solid #e6ecf0;
+  flex-grow: 1;
+}
+
+.tweet {
+  display: flex;
+  padding: 8px;
+  border-bottom: 1px solid #e6ecf0;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  min-height: 64px;
+  cursor: pointer;
+}
+
+.tweet:hover {
+  background-color: #f5f8fa;
+}
+
+.tweet__avatar img {
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  position: absolute;
+}
+
+.tweet__header {
+  display: flex;
+  flex: 1 1 100%;
+}
+.tweet__author {
+  display: flex;
+  margin-left: 60px;
+}
+.tweet__author:hover h3 {
+  color: #1da1f2;
+  text-decoration: underline;
+}
+.tweet__content {
+  margin-left: 60px;
+  color: #14171a;
+  font-size: 14px;
+  flex: 1 1 100%;
+}
+.tweet__header h3 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.tweet__footer {
+  margin-left: 60px;
+  flex: 1 1 100%;
+  display: flex;
+  margin-top: 10px;
+}
+
+.tweet__action {
+  align-items: center;
+  display: flex;
+  color: #657786;
+  cursor: pointer;
+}
+
+.tweet__action--comment:hover {
+  color: #1da1f2;
+}
+.tweet__action--retweet:hover {
+  color: #17bf63;
+}
+.tweet__action--like:hover {
+  color: #e0245e;
+}
+
+.tweet__action + .tweet__action {
+  margin-left: 40px;
+}
+
+.tweet__action-icon {
+  font-size: 1.8rem;
+}
+
+.tweet__action-text {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.tweet__text {
+  word-break: break-word;
+  line-height: 2rem;
+}
+
+.tweet__text p {
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+.tweet__header-span {
+  color: #657786;
+  font-size: 1.4rem;
+}
+
+.tweet__date {
+  display: flex;
+  align-items: center;
+}
+.tweet__date::before {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f111";
+  font-weight: bold;
+  font-size: 2px;
+  margin: 0 4px;
 }
