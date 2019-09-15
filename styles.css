@@ -261,6 +261,8 @@ li.banner__user-info--active .banner__amount {
   border: 5px solid #fff;
   position: absolute;
   bottom: -87px;
+  left: 10px;
+  z-index: 2;
 }
 
 .banner__avatar {
@@ -357,4 +359,43 @@ li.banner__user-info--active .banner__amount {
   height: 81px;
   width: 81px;
   margin: 8px 0 0 8px;
+  overflow: hidden;
+}
+
+.images__image-box img {
+  height: 81px;
+  width: 81px;
+  object-fit: cover;
+}
+
+.about__followers {
+  margin: 15px 0 5px;
+  padding: 0 15px;
+}
+
+.followers__info {
+  margin-bottom: 8px;
+}
+
+.about__followers-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 1;
+  margin: -4px 0 0 -4px;
+}
+
+.followers__image-box {
+  background-color: #66757f;
+  border-radius: 50%;
+  height: 49px;
+  width: 49px;
+  margin: 4px 0 0 4px;
+  overflow: hidden;
+}
+
+.followers__image-box img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
 }
