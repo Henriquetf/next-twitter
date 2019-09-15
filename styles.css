@@ -432,6 +432,7 @@ li.banner__user-info--active .banner__amount {
 .header__title {
   color: #14171a;
   font-size: 1.8rem;
+  align-items: baseline;
 }
 
 .modules-card__header button {
@@ -523,4 +524,50 @@ li.banner__user-info--active .banner__amount {
   margin-bottom: 4px;
   margin-left: 60px;
   width: 120px;
+}
+
+.trends {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.7rem;
+}
+
+.trends + .trends {
+  margin-top: 10px;
+}
+
+.trends__hashtag {
+  color: #1da1f2;
+  font-weight: bold;
+}
+
+.trends__tweets {
+  line-height: 1.6rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.modules-card--trends {
+  padding: 15px;
+}
+
+.modules-copyright {
+  display: flex;
+  flex-wrap: wrap;
+  color: #657786;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.modules-copyright li {
+  padding-right: 10px;
+}
+
+.modules-copyright li a {
+  color: #657786;
+}
+
+.modules-copyright li a:hover {
+  color: #55acee;
 }
